@@ -10,7 +10,7 @@ import flask
 server = flask.Flask(__name__)
 # Initialize the app - style sheet is in ./assets/style.css so does not need to be specified eg:
 # app = dash.Dash(__name__, external_stylesheets='./assets/style.css')
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, server=server)
 
 # Define the app
 app.layout = html.Div()
