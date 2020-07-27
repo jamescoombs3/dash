@@ -294,7 +294,7 @@ def graph_update(scope, data):
                        margin=dict(l=0, r=0, b=0, t=0, pad=4))
     return figx
 
-# Run on port 8056 (because I have a few versions on the go ..)
+# Run with use_reloader=False 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(debug=True, use_reloader=False)
 
